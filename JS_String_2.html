@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <ul class="listItems">
+
+    </ul>
+    <script>
+        let list = document.querySelector('.listItems');
+        list.innerHTML = '';
+        let cities = ['mumBAi', 'dELHi', 'BanGALOre', 'ganDhinager'];
+        for (let i = 0; i < cities.length; i++) {
+            let lowerCaseCity = cities[i].toLowerCase();
+            let firstAlphabet = lowerCaseCity.slice(0, 1);
+            lowerCaseCity = lowerCaseCity.replace(firstAlphabet, firstAlphabet.toUpperCase());
+            let innerlistItem = document.createElement('li');
+            innerlistItem.textContent = lowerCaseCity;
+            list.appendChild(innerlistItem);
+        }
+
+    </script>
+</body>
+
+</html>

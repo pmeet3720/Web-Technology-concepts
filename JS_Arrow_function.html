@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Arrow function</title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>This my world class heading</h1>
+    </div>
+    <script>
+        // function greet() {
+        //     console.log("Good Morning Meet");
+        // }
+
+        // Arrow function
+        let greet = () => {
+            console.log("Hello everyone I am a web developer");
+        }
+        greet();
+
+        let sum = (a, b) => a + b;
+        let half = (a) => a / 2;
+
+        // This will print after 10 secs.
+        setTimeout(() => {
+            console.log("I am a meditator and believe in spiritualism");
+        }, 10000);
+
+        let obj1 = {
+            greeting: "Good Morning",
+            names: ["Meet", "Poojan", "Kabir", "Ahir"],
+            speak() {
+                this.names.forEach((student) => {
+                    console.log(this.greeting + " " + student);
+                });
+            }
+        }
+        obj1.speak();
+    </script>
+</body>
+
+</html>

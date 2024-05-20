@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Variables</title>
+    <style>
+        :root{
+            --box-color:blue;
+            --primary-color:violet;
+            --danger-color:yellow;
+            --my-color:aqua;
+            --maxw:500px;
+        }
+        .container{
+            width: var(--maxw);
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin: auto;
+            /* this way we can use the custom variables in any class if we have declared it globally */
+            background-color: var(--primary-color);
+            padding: 10px;
+        }
+        .boxes{
+            /* syntax of custom variables - '--box-color : red;' */
+            /* if we declare any vriable inside any class than it is local that means it will destroy after the work of that particular class is finished */
+            /* if you want to access that variable in all other classes than declare it as global as i have declared it above. */
+            /* --box-color:red; */
+            background-color: brown;
+            width: 300px;
+            height: 300px;
+            border: 2px solid var(--danger-color);
+            /* box-shadow: 5px 5px var(--box-color); */
+            margin: 2px 5px;
+            /* text-align: center; */
+            font-size: 40px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="boxes">1</div>
+        <div class="boxes">2</div>
+        <div class="boxes">3</div>
+        <div class="boxes">4</div>
+    </div>
+</body>
+</html>

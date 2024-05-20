@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media queries</title>
+    <style>
+        .box{
+            font-size: 70px;
+            text-align: center;
+            background-color: aqua;
+            color: black;
+        }
+
+        @media  screen and (max-width: 600px)
+        {
+            .box{
+                background-color: blue;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="box-1">I am a Iphone</div>
+    <div class="box" id="box-2">I am a tablet</div>
+    <div class="box" id="box-3">I am a compter</div>
+    <div class="box" id="box-4">I am a laptop</div>
+</body>
+</html>
+<!-- some advanced properties in css -->
+<!-- for eg when we use img source and we want to convert that image into circle or triangle or any other shape of your choice with the help of clip-path property just search clip-path-generator on google you will get thousands of shapes and you can convert your image into your desired shape -->
+<!-- box-sizing: content box; this property will not change the width and height of the content box border and padding will be outside the content box
+box-sizing : border-box; this property will change the size of content box as it will decrease the size of content box to accumulate border and padding inside the content box  -->
+<!-- Now to add responsiveness to our website we use media queries for setting the content according to the device width , height and resolutions,etc.  -->
+<!-- So media queries are like if else statement that we use in our programming language
+if there is mobile phone than set width according to its size,
+if it is tablet than set width and height of content according to the tablet screen,
+if it is wide screen computer than set width and height according to that wide screen computer. -->
+<!-- search media query mdn on google  -->

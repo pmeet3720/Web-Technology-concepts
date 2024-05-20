@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bsic login form</title>
+    <style>
+        .container{
+            background-color: rgb(198 204 216 / 22%);
+            border: 2px solid #ccc;
+            margin: auto;
+            padding: 30px;
+            text-align: center;
+            /* position: relative; */
+            width: 500px;
+            height: 330px;
+        }
+        
+         input[type=email]{
+            margin: 25px;
+            padding: 5px;
+            width: 68%;
+            border: 1px solid rgb(145 142 142 / 28%);
+            border-radius: 3px;
+         }
+         input[type=password]{
+            margin: 10px 5px 15px 5px;
+            padding: 5px;
+            width: 68%;
+            border: 1px solid rgb(145 142 142 / 28%);
+            border-radius: 3px;
+            /* text-decoration: none; */
+         }
+         .forgotpassword{
+            text-decoration: none;
+            margin: 0px 0px 0px 70px;
+            font-style: 'Ubuntu Condensed', sans-serif;
+         }
+         checkbox{
+            margin: 0px 5px 0px 0px;
+            font-style: 'Ubuntu Condensed', sans-serif;
+         }
+         .login{
+            width: 70%;
+            margin: 25px 0px 10px 0px;
+            color: white;
+            border: 1px  #0000ff9c;
+            background-color: #0000ff9c;
+            border-radius: 2px;
+            padding: 5px;
+            font-family:  'Asap', sans-serif;
+            cursor: pointer;
+         }
+         span{
+            font-family:  'Asap', sans-serif;
+         }
+         .login:hover{
+            background-color: #0000ffad;
+         }
+         .Register{
+            text-decoration: none;
+            font-family:  'Asap', sans-serif;
+         }
+         .register{
+            margin: 0px;
+            font-family:  'Asap', sans-serif;
+         }
+        a{
+            text-decoration: none;
+            margin: 10px;
+            font-family:  'Asap', sans-serif;
+        }
+        .links{
+            margin: 14px;
+        }
+        .signup{
+            font-family:  'Asap', sans-serif;
+        }
+           
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=PT+Serif:ital,wght@0,400;1,700&family=Ubuntu+Condensed&family=Ubuntu:ital@1&display=swap" rel="stylesheet">
+</head>
+<body>
+    <form action="">
+        <div class="container">
+            <div class="subcontainer1">
+                <input type="email" placeholder="Email address" name="email">
+            </div>
+            <div class="subcontainer1">
+                <input type="password" placeholder="Password" name="pwd">
+            </div>
+            <div class="subcontainer1">
+                <label for="checkbox"><span>Remember me</span></label>
+                <input type="checkbox"  name="checkbox" class="checkbox">
+
+                <a href="link" class="forgotpassword"><span>Forgot password</span>&#63;</a>
+            </div>
+            <div class="subcontainer1">
+                <button type="submit" class="login">SIGN IN</button>
+            </div>
+            <div class="register">
+                <p>Not a member&#63;<a href="link" class="Register">Register</a></p>
+            </div>
+            <div>
+                <div class="signup">or sign up with:</div>
+            </div>
+            <div class="links">
+                <div><a href="link" class="google">google</a><a href="link" class="facebook">facebook</a><a href="link" class="twitter">twitter</a><a href="link" class="linkedin">linkedin</a></div>
+            </div>
+
+        </div>
+    </form>
+</body>
+</html>

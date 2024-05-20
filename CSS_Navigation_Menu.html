@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Navbar</title>
+    <style>
+        body{
+            background-image: url('C:\Users\hp\Desktop\Web Development Projects\Images\man-2604149_1920.jpg');
+        }
+        .navmenu {
+            background-color: aqua;
+            border-radius: 30px;
+            padding:  15px 15px;
+            margin: 13px;
+            /* position:relative; */
+        }
+
+        .navmenu li {
+            list-style: none;
+            display: inline-block;
+            /* inspite display property we can also give float property to it we can give float: left
+            after that it will overflow its parent element so we will assign overflow property to its parent element that is ul element */
+            margin: 4px 25px;
+            font-family:  'Asap', sans-serif;
+        }
+
+        .navmenu li a {
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .navmenu li a:hover{
+            color: rgb(31, 177, 226);
+        }
+        .search{
+            /* position: absolute; */
+           float: right;
+           padding: 3px 60px;
+        }
+        .navmenu input{
+            border: 2px solid black;
+            /* padding: 4px 4px; */
+            border-radius: 14px;
+            padding: 2px 17px;
+            margin: auto;
+            width: 120px;
+        }
+    </style>
+     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=PT+Serif:ital,wght@0,400;1,700&family=Ubuntu+Condensed&family=Ubuntu:ital@1&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <ul class="navmenu">
+        <li><a href="@">Home</a></li>
+        <li><a href="@">About</a></li>
+        <li><a href="@">Service</a></li>
+        <li><a href="@">Contact Us</a></li>
+        <div class="search">
+            <input type="text" id="search" name="search" placeholder="type here to search">
+        </div>
+    </ul>
+</body>
+
+</html>

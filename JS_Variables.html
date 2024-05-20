@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <h1>Payment Form</h1>
+        <p>
+        <div>Buyer's FullName: <span></span></div>
+        <div>Price: 150</div>
+        <div>Course Name: Data Structure and Algorithm</div>
+        </p>
+    </div>
+    <script>
+        // Naming convention of Variables
+
+        // camelCase
+        let firstName = 'Meet';
+
+        // PascalCase
+        let LastName = 'Patel';
+
+        // snake_case
+        let middle_name = 'HitendraKumar';
+
+        const price = 150;
+
+        var courseName = 'Data Structures And Algorithms';
+
+        let fullName = firstName + ' ' + middle_name + ' ' + LastName;
+
+        let innertext = document.querySelector('span');
+        innertext.textContent = fullName;
+
+        var modeofPayment;
+        // Taking input from user
+        modeofPayment = prompt('Mode of Payment?');
+
+        //Output to user
+        alert(firstName + ' ' + 'Successfully bought ' + courseName + ' using ' + modeofPayment);
+
+
+        console.log(fullName);
+    </script>
+</body>
+
+</html>

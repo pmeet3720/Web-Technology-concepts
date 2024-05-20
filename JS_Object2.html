@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects tutorial</title>
+</head>
+
+<body>
+    <script>
+        // object is dynamic data type which can be initialized at runtime also no need to redeclare it.
+        // Simplest way of declaring object which not so effective
+        // let lecture = 10;
+        // let title = 'Javascript';
+        // let section = 3;
+        const course = {
+            lecture: 7,
+            title: 'Javascript',
+            section: 3,
+            enroll() {
+                console.log('Successfully enrolled');
+            }
+        }
+        course.enroll();
+        course.price = 150;
+        console.log(course);
+
+
+        // Factory Function: here inside function we create object and return a object to a function createCourse()
+        function createCourse(title) {
+            // const newcourse = {
+            //     newTitle: title,
+            //     enroll() {
+            //         console.log('You are successfully enrolled into a course');
+            //     }
+            // }
+            // return newcourse;
+
+            // 2nd way to return a object
+            return {
+                newTitle: title,
+                enroll() {
+                    console.log('You are successfully enrolled into a course');
+                }
+            }
+        }
+        const newcourse = createCourse('Javascript');
+        // newcourse.enroll();
+
+
+
+        // Constructor function : This is same as constructor, we create variables using this keyword and initialize it
+        function Course(title) {
+            this.newTitle = title;
+            this.enroll = function () {
+                console.log('You have successfully enrolled into a course');
+            }
+        }
+        // const course = new Course('Javascript');
+        // course.enroll();
+        // console.log(course.newTitle);
+
+        // Another way of declaring constructor function
+        const Course_1 = new Function('title', `this.newTitle = title;
+            this.enroll = function () {
+                console.log('You have successfully enrolled into a course');
+            }`)
+
+        const course_2 = Course_1('Javascript');
+        course_2.enroll();
+        let name;
+    </script>
+</body>
+
+</html>

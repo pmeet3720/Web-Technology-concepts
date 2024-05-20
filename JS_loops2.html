@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS loops tutorial</title>
+</head>
+
+<body>
+    <script>
+        for (let i = 0; i < 10; i++) {
+            console.log(i);
+        }
+        //Multiplication table of 5 using for loop
+        for (let i = 5; i < 51; i = i + 5) {
+            console.log(i);
+        }
+
+        //Created an object
+        let animal = {
+            name: 'Meet',
+            age: 20
+        }
+        //for...In loop
+        //if we are using an object then we use 'key' variable for iterating an object
+        for (let key in animal) {
+            console.log(key, animal[key]);
+        }
+
+        //Arrays
+        let names = ['Tiger', 'Lion', 'Zebra', 'Cheetah', 'Elephant'];
+        for (let index in names) {
+            // console.log(index);
+            console.log(index, names[index]);
+        }
+
+        // for...of loop 
+        // for...of loop doesn't print index of an array but it directly prints its values
+        // in for...in loop the variable written in it reperesents index but in for...of loop it reperesents the value.
+        for (let name of names) {
+            console.log(name);
+        }
+    </script>
+</body>
+
+</html>

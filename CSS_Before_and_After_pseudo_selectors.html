@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and After pseodu selectors</title>
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+            background-color: black;
+            color: white;
+        }
+        /* by using this before and after pseudo selectors we can solve problem of image setting on page we can set image before or after content written */
+        header::before{
+            background: url('https://images.unsplash.com/photo-1628258334105-2a0b3d6efee1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80') no-repeat center center/cover;
+            content: " ";
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0.3;
+             width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+      .lists{
+        display: flex;
+      }
+      li{
+        list-style: none;
+        padding: 34px 23px;
+    }
+    a{
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 5px 23px;
+        height: 233px;
+    }
+    .para{
+        text-align: center;
+    }
+    .heading{
+        font-size: 45px;
+    }
+    .box{
+        display: flex;
+    }
+    .boxes{
+        flex-grow: 1;
+        padding: 20px;
+        border: 2px solid white;
+        border-radius: 5px;
+        text-align: center;
+        margin: 10px;
+        width: 100%;
+        background-color: rgb(4, 136, 4);
+    }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <ul class="lists">
+                <li class="item"><a href="#">Home</a></li>
+                <li class="item"><a href="#">About</a></li>
+                <li class="item"><a href="#">Services</a></li>
+                <li class="item"><a href="#">Contact us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="container">
+        <h1 class="heading">Welcome to Coding World!</h1>
+        <p class="para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde distinctio ut maxime necessitatibus! Deserunt placeat incidunt ullam neque nostrum vitae blanditiis dolore consectetur harum suscipit, maxime dolorum ea obcaecati voluptatibus sint repellendus nisi eveniet nam laborum cum animi. Rem, temporibus Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis voluptas doloremque facilis eaque aut unde distinctio error natus sunt sequi.</p>
+    </section>
+    <hr>
+    <div class="box">
+        <div class="boxes"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum provident vero accusamus voluptates repellendus natus odio harum nobis veritatis hic!</p></div>
+        <div class="boxes"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro eos eius vero consequatur dolore fuga qui officiis nulla at rerum.</p></div>
+        <div class="boxes"><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos neque maiores voluptates minima? Explicabo, nostrum. Quidem quos saepe tempora cum atque, quod voluptatum libero odit.</p></div>
+        
+    </div>
+    <!-- koi bhi block element ko centre karna h to sabse pahle use width do aur phir uski margin auto kardo -->
+    <!-- Pseudo selectors - we can access the elements by using attributes given to them
+    for eg; if we want to select text type input then what we can do is
+     input[type='text'], similar way input[type='email'], input[type='password']-->
+     <!-- if we give attribute to anchor tag like target='bunk' then we can access it with the help of pseudo selector i;e a[target='bunk'] -->
+     <!-- there is another term called element:nth-child(n) and we can apply properties to that element tag -->
+     <!-- for eg if there are 4 li list elements and we want to apply property to 3rd li element so we can write as li:nth-child(3){ } and apply property to it -->
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadows</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .container{
+            display: flex;
+        }
+        /* box shadow sintax and types:
+        box-shadow: offset-x offset-y color; */
+        /* box-shadow: offset-x offset-y blur-radius color; */
+        /* box-shadow: offset-x offset-y blur-radius spread-radius color */
+        .boxes{
+            width: 100%;
+            flex-grow: 1;
+            border: 3px solid rgb(153, 151, 151);
+            background-color: rgb(156, 248, 217);
+            /* box-shadow: 6px 5px grey; */
+            /* box-shadow: -5px -8px #ccc; */
+            /* box-shadow: 10px 10px 12px #ccc; */
+            /* box-shadow: -7px -8px 10px #ccc; */
+            box-shadow: -7px -5px 10px 8px rgb(34, 184, 184, 0.4);
+            /* In rgb the last column is for alpha- the intensity of color or we can say that it decides the brightness of color. (alpha-0.4) */
+            /* if we want box-shadow inside the box we use inset property in box-shadow as:
+            box-shadow: inset 3px 5px grey */
+            box-shadow: inset 5px 7px grey;
+            margin: 13px;
+            padding: 23px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="boxes" id="item-1">
+            <h2 class="heading">Card 1</h2>
+            <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati rerum dolores explicabo consequatur quia suscipit quod quasi, aspernatur amet vel ipsam! Praesentium laboriosam incidunt, magni sit voluptate labore architecto quasi eos autem! Doloribus, ea?</p>
+        </div>
+        <div class="boxes" id="item-2">
+            <h2 class="heading">Card 2</h2>
+            <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam quis ratione perferendis incidunt sit vitae aperiam aliquid, tempora autem mollitia explicabo illo et quae eum unde eaque reiciendis ipsum. Repellendus ad eum dignissimos doloribus ea consequatur a esse dolore reiciendis!</p>
+        </div>
+        <div class="boxes" id="item-3">
+            <h2 class="heading">Card 3</h2>
+            <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam ipsum, officia illo accusantium voluptatibus ea nulla rerum. Impedit, doloremque, fugit expedita enim dolores maxime ducimus iusto est aperiam eveniet, tempora debitis odio dignissimos? Quaerat dolores veniam recusandae fugiat vel consectetur quidem natus.</p>
+        </div>
+    </div>
+</body>
+</html>

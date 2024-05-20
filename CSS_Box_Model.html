@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        body{
+            background-color: #628383;
+        }
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+        .container{
+            background-color: rgb(205 142 142);
+            border: 4px solid rgb(4 13 58);
+            padding: 8mm;
+            /* padding means from top, from bottom, from left, from right it will collapse and make things smaller from all corners */
+            /* we can set margin/padding for top, bottom, left, right and like this */
+            /* padding-top= 78px
+            padding- bottom= 34px
+            padding left = 76px
+            padding right = 50px */
+            padding:31px 85px 31px 85px; /* top right bottom left*/
+            /* padding = y(top/bottom) x(right/left)
+            padding = 30px 20px */
+            border-radius: 30px;
+            width: 89mm;
+            margin: 30px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>This is Heading</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut sit dolorum vel eius minus voluptatem rem maxime exercitationem libero voluptates, porro expedita iste officia ad corrupti consequuntur alias eligendi praesentium repellendus quam at placeat.</p>
+    </div>
+    <div class="container">
+        <h1>This is Heading</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut sit dolorum vel eius minus voluptatem rem maxime exercitationem libero voluptates, porro expedita iste officia ad corrupti consequuntur alias eligendi praesentium repellendus quam at placeat.</p>
+    </div>
+    <div class="container">
+        <h1>This is Heading</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut sit dolorum vel eius minus voluptatem rem maxime exercitationem libero voluptates, porro expedita iste officia ad corrupti consequuntur alias eligendi praesentium repellendus quam at placeat.</p>
+    </div>
+</body>
+</html>

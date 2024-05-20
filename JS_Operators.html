@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operators Tutorial</title>
+</head>
+
+<body>
+    <script>
+        let x = 50, y = 5;
+        //division operator
+        // x = x / y;
+
+        //Remainder Operator
+        // x = x % y;
+
+        //Exponantial operator
+        // x = x ** y;
+
+        //left shift operator
+        // x = x << y;
+
+        //Right shift operator
+        // x = x >> y;
+
+        //Bitwise And operator
+        // x = x & y;
+
+        //Bitwise Or operator
+        // x = x | y;
+
+        //Logical And operator
+        // x && (x = y);
+
+        //Logical Or operator
+        // x || (x = y);
+
+        //Equal operator
+        // x = (5 == 5);
+        //This will print true, as 5 is equal to 5
+        // console.log(x);
+        // x = (5 == '5');
+        //This will also print true as it will not check data type of operands, it just checks that whether they are equal or not
+        // console.log(x);
+        // x = (5 != '5');
+        // console.log(x);
+
+        //Strict equal operator
+        // x = (5 === 5);
+        //This is true only as both the data types are equal, both are integer only
+        // console.log(x);
+
+        // x = (5 === '5');
+        //This will print false, as data type of both operand is not same.
+        // console.log(x);
+
+        // x = (5 !== '5');
+        //Since operators are not equal so it will print true.
+        // console.log(x);
+
+        let z = x + y++;
+        console.log(z);
+        z = x + ++y;
+        console.log(z);
+        console.log(y);
+
+
+    </script>
+</body>
+
+</html>

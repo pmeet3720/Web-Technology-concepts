@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .navbar{
+            position: relative;
+            height: 50px;
+        }
+        /* .logo img{
+            height: 59px;
+            margin: 3px 6px;
+        } */
+        .navbar::before{
+            content: " ";
+            background-color: black;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+        }
+        .navbar ul{
+            display: flex;
+            align-items: center;
+        }
+        .navbar ul li{
+            list-style: none;
+            font-size: 1.3rem;
+            color: white;
+            padding: 10px 25px;
+        }
+
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <!-- <div class="logo">
+            <img src="" alt="">
+        </div> -->
+        <ul>
+            <li>Home</li>
+            <li>Services</li>
+            <li>About Us</li>
+            <li>Contact Us</li>
+        </ul>
+    </nav>
+</body>
+</html>

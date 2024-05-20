@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Array</title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+
+
+
+
+    <script>
+        // use 'let' instead of 'var'
+        let a = 2;
+        let myvar1 = true;
+        let myvar2 = undefined;
+        let myvar3 = null;
+
+        // An object is being created and initialized.
+        // object is created with key:value pair, if you want to access any property in object then we use dot and 
+        // square brackets. Dot is used to access characters and square brackets is used to access key value with 
+        // numbers.
+        let employee = {
+            name: "Meet",
+            branch: "CSE",
+            rollno: 407,
+            channel: "love babbar",
+            "channel 2": "codeWithHarry"
+        }
+        // console.log(employee);
+        for (key in employee) {
+            console.log(key, ":", employee[key]);
+        }
+        console.log(employee);
+        // An Array is being created and initialized.
+        var names = [1, 5, 3, 4, "Meet", 'CSE'];
+        console.log(names);
+        console.log(names["1"]);
+        console.log(names[1]);
+        names["Ninth"] = 2;
+        console.log(names);
+        for (key in names) {
+            console.log(key, ":", names[key]);
+        }
+        var x = 10.234;
+        x.toFixed(0);
+        console.log(x);
+        // The above two written things are same.
+        // Sorting an array using sort function
+        // console.log(names.sort());
+        // console.log(names.length)
+
+        // let names = new Array(1,2,4,6,'Meet','CSE');
+        // console.log(names.length);
+        // names.push('Happy New Year');
+        // console.log(names);
+
+        // let names = new Array(10);
+        // If you only write a single element inside Array(10) then it will consider it as size.
+        // console.log(names);
+        // If you will try to access a element from an array then it will print undefined like for example names[3]; 
+
+    </script>
+
+</body>
+
+</html>

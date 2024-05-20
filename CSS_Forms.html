@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Forms</title>
+    <style>
+        h2 {
+            text-align: center;
+        }
+
+        /* body {
+            background-color: aquamarine;
+        } */
+
+        .container {
+            background-color: #ccc;
+            padding: 30px;
+            margin: 30px;
+            border: 4px solid rgb(121, 108, 108);
+            border-radius: 20px;
+            position: relative;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="date"],
+        input[type="number"],
+        input[type="radio"],
+        textarea,
+        select{
+            width: 100%;
+            padding: 5px 10px;
+            margin: 10px;
+            border: #ccc;
+        }
+        input[type="submit"],
+        input[type="reset"]{
+            width: 100%;
+            background-color: rgb(196, 233, 233);
+            cursor: pointer;
+        }
+
+        .subcontainer1 {
+            font-family: 'PT Serif', serif;
+            font-style: italic;
+            font-size: 25px;
+            margin: 20px;
+            /* text-decoration: double; */
+        }
+
+        .subcontainer2 {
+            font-family: 'PT Serif', serif;
+            margin: 20px;
+            position: relative;
+        }
+
+        .btu{
+            background-color: rgb(93, 139, 177);
+            border-radius: 5px;
+            font-size: 15px;
+            color: black;
+            margin: 10px;
+        }
+        .btu:hover{
+            background-color: rgb(131, 148, 182);
+        }
+    
+       
+    </style>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=PT+Serif:ital,wght@0,400;1,700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+   <form action="">
+    <div class="container">
+        <div class="subcontainer1">
+            <h2>Registration Form</h2>
+            <p>Please fill the requiered details</p>
+        </div>
+        <div class="subcontainer2">
+            First Name:<input type="text" name="fname">
+        </div>
+        <div class="subcontainer2">
+            last Name:<input type="text" name="lname">
+        </div>
+        <div class="subcontainer2">
+            Name:<input type="text" name="my name" placeholder="Enter your name">
+        </div>
+        <div class="subcontainer2">
+            Password:<input type="password" name="my password">
+        </div>
+        <div class="subcontainer2">
+            Date of Birth:<input type="date" name="my dob">
+        </div>
+        <div class="subcontainer2">
+            Mobile Number:<input type="number" name="my number">
+        </div>
+        <div class="subcontainer2">
+            Address: <textarea name="address" id="address" cols="40" rows="5"></textarea>
+        </div>
+        <div class="subcontainer2">
+            Pincode:<input type="number" name="my pincode">
+        </div>
+        <div class="subcontainer2">
+            Email:<input type="Email" name="my email">
+        </div>
+        <div class="subcontainer2">
+            Collage First Sem CGPA:<input type="number" name="my cgpa">
+        </div>
+        <div class="subcontainer2">
+            <!-- <label for=""></label> -->
+            <label for="branch">Select branch name</label>
+            <select>
+                <option>Computer Engineering</option>
+                <option>Mechanical Engineering</option>
+                <option>Electrical Engineering</option>
+                <option>ECE</option>
+                <option>ICT</option>
+                <option>Civil Engineering</option>
+                <option>Automobile</option>
+                <option>robotics</option>
+            </select>
+            <!-- Branch Name:<input type="text" name="my branch"> -->
+        </div>
+        <div class="subcontainer2">
+            Year of Graduation:<input type="number" name="my email">
+        </div>
+        <div class="subcontainer2">
+            Gender Male:<input type="radio" name="gender">
+            Female:<input type="radio" name="gender">
+            Other:<input type="radio" name="gender">
+        </div>
+        <div class="subcontainer2">
+            I agree with terms and conditions:<input type="checkbox" name="checkbox">
+        </div>
+        <div class="btu">
+            <input type="submit" value="Submit Now">
+        </div>
+        <div class="btu">
+            <input type="reset" value="Reset Now">
+        </div>
+        <div>
+            <input type="radio" id="html" name="fav_language" value="HTML">
+            <label for="html">HTML</label><br>
+            <input type="radio" id="css" name="fav_language" value="CSS">
+            <label for="css">CSS</label><br>
+            <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+            <label for="javascript">JavaScript</label><br><br>
+            <input type="submit" value="Submit">
+        </div>
+        <!-- <div class="fname">
+            <!-- <label for="name">Enter your name</label> -->
+            <!-- Name:<input type="text" name="name" placeholder="First name"> -->
+            <!-- <label for="name">Enter your name</label> -->
+        <!-- </div> --> 
+
+    </div>
+   </form>
+</body>
+
+</html>

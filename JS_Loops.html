@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops tutorial</title>
+</head>
+
+<body>
+    <div>
+        <h2>This is tutorial for loops in JS</h2>
+    </div>
+    <script>
+        // creating an object of an employee
+        let employee = {
+            Name: "Meet",
+            Age: 20,
+            Collage: "PDEU",
+            Branch: "CSE"
+        }
+        console.log(employee);
+        for (key in employee) {
+            console.log('The ' + key + ' of employee is ' + employee[key]);
+        }
+
+        // creating array
+        let names = ['Meet', 'Rohan', 'Dev', 'Prashant', 'Poojan', 'Aayush'];
+        // for in loop in JS
+        // for (i in names) {
+        //     console.log("Hello friend " + names[i]);
+        // }
+
+        // for loop in JS
+        // for (let index = 0; index < names.length; index++) {
+        //     console.log(names[index]);
+        // }
+
+        // do while loop in JS
+        let i = 0;
+        do {
+            console.log(names[i] + " since this is do while loop once it will get executed");
+            i++;
+        } while (i < 0);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyframes and Animations</title>
+    <style>
+        .container{
+            display: flex;
+            background-color: blue;
+        }
+        .box{
+            background-color: green;
+            width: 250px;
+            height: 250px;
+            position: relative;
+            /* now using animation properties which makes website look good */
+            animation-name: Meet1;
+            animation-duration: 1s;
+            animation-iteration-count: 2;
+            /* another property is animation fill mode which stop the particular element when it is at its end part of animation */
+            /* that means if countis 2 than it will stop at its end state when 2 counts are over */
+            animation-fill-mode: forwards;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 20px;
+        }
+        @keyframes Meet1 {
+            from{
+                width: 200px;
+            }
+            to{
+                width: 800px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            This is a box
+        </div>
+    </div>
+</body>
+</html>

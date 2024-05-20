@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browser Events</title>
+</head>
+
+<body>
+    <h1 onclick="myCall()">
+
+    </h1>
+    <div class="Button" onclick="myCall()">
+        <button id="btn">Click Me</button>
+    </div>
+    <script>
+        // function myCall() {
+        //     // let a = 6;
+        //     // document.write(a);
+        //     // document.write('Meet Patel');
+
+        //     let h1element = document.getElementsByClassName('.Button');
+        //     h1element.innerHTML = 'Meet Patel';
+
+        //     // console.log(a);
+
+        // }
+
+        btn.addEventListener('click', function (e) {
+            // alert('Hello World1!');
+            var text = document.getElementsByClassName('.Button');
+            text.textContent = 'Meet Patel';
+        })
+
+        // btn.addEventListener('click', function (e) {
+        //     alert('Hello World2!');
+        // })
+
+        // btn.addEventListener('')
+
+
+    </script>
+</body>
+
+</html>

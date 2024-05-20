@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Webdesign</title>
+    <style>
+          @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+        *{
+            box-sizing: border-box;
+        }
+        .heading{
+            text-align: center;
+            margin-top: 10px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-style: inherit;
+            color:red
+        }
+        #main{
+        
+            text-align: center;
+        }
+        .box{
+            text-align: center;
+            padding: 20px;
+            width: 25%;
+            border: 10%;
+            border-radius: 20px;
+            color: rgb(231, 227, 218);
+            background-color: black;
+        }
+        @media   (max-width:320px){
+            .box{
+                width: 45%;
+                padding:10px;
+                margin:2px;
+                float: left;
+            }
+        }
+        @media all and (max-width:520px) and (min-width:321px){
+            .box{
+                align-content: center;
+                width: 35%;
+                padding: 15px;
+                float: left;
+                margin: 2px;
+            }
+        }
+        @media all and (max-width:720px) and (min-width:521px){
+            .box{
+                width: 65%;
+                padding: 25px;
+                margin: 5px;
+                float: left ;
+            }
+        }
+        @media all and (max-width:920px) and (min-width:721px){
+            .box{
+                width: 80%;
+                padding: 30px;
+                margin: 5px;
+                float: none ;
+            }
+        }
+        @media all and (max-width:1120px) and (min-width:921px){
+            .box{
+                width: 100%;
+                padding: 40px;
+                margin: 5px;
+                float: none ;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div Class="heading">
+        <h1> Resposiveness Challenge</h1>
+        
+    </div>
+    <br>
+    <br>
+    <div id="main">
+        <span class="box">This is Box-1</span>
+        <span class="box">This is Box-2</span>
+        <span class="box">This is Box-3</span>
+        <span class="box">This is Box-4</span>
+    </div>
+</body>
+</html>

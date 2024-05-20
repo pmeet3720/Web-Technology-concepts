@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+    <style>
+        .container
+        {
+            display: grid;
+            /* grid-template-columns: 300px 200px 100px; */
+            /* The above property of grid divides the coloumn into three parts with the given width in column layout */
+            /* grid-template-columns: repeat(3,auto); */
+            /* grid-gap: 1rem; */
+            /* This above Property acts like margin and padding which is grid-gap */
+            grid-template-rows: 4fr;
+            grid-auto-rows: 2fr;
+            /* grid auto rows works for those rows which are not assigned any width or fr */
+            grid-template-columns: 2fr 2fr 2fr 2fr;
+            grid-template-columns: repeat(4,2fr);
+            grid-gap: 1rem;
+
+            grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+            /* this above property makes grids responsive accoerding to the screen min-200px and max-1fr it will remain responsive else irresponsive */
+            /* minimum ye 200px tak stretch hone degha and maximum ye 1fr tak stretch hogha */
+        }
+        .item
+        {
+            /* height: 40px; */
+            background-color: aqua;
+            border: 2px solid black;
+            /* margin: 3px; */
+            padding: 10px 10px;
+            /* align-items: center; */
+            text-align: center;
+        }
+        .item:first-child{
+            grid-column-start: 1;
+            /* grid-column-end: 3; */
+            /* grid-row-start: 1; */
+            /* grid-row-end: 3; */
+            /* grid-column: 1/ span 3; */
+            /* this will span 3 boxes along column */
+            /* grid-row: 1 / span 3; */
+            /* this will span 3 boxes along row */
+        }
+        /* this above properties span the rows and columns to that to which we are applying */
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">This is item-1</div>
+        <div class="item">This is item-2</div>
+        <div class="item">This is item-3</div>
+        <div class="item">This is item-4</div>
+        <div class="item">This is item-5</div>
+        <div class="item">This is item-6</div>
+        <div class="item">This is item-7</div>
+        <div class="item">This is item-8</div>
+        <div class="item">This is item-9</div>
+        <div class="item">This is item-10</div>
+        <div class="item">This is item-11</div>
+        <div class="item">This is item-12</div>
+    </div>
+</body>
+</html>

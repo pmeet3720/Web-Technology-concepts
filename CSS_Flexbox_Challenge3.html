@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Challenge 3</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .flex-row {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 10px;
+            /* flex-wrap: wrap; */
+        }
+
+        .flex-item {
+            flex-grow: 1;
+            width: 200px;
+            /* height: 530px; */
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            background-color: white;
+            margin: 10px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+
+        .nature {
+            height: 255px;
+        }
+
+        img {
+            width: 100%;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            /* height: 200px; */
+        }
+
+        h2 {
+            text-align: center;
+            /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+        }
+
+        .para {
+            padding: 15px;
+        }
+
+        .button {
+            text-align: center;
+            margin: 15px;
+        }
+
+        .submit {
+            padding: 12px;
+            background-color: #ccc;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            width: 30%;
+        }
+
+        #flex-item-2 {
+            margin: 0px 0px 28px 0px;
+        }
+
+        #flex-item-5 {
+            margin: 28px 0px 0px 0px;
+        }
+
+        #flex-item-3 img {
+            height: 290px;
+        }
+
+        #flex-item-4 img {
+            height: 255px;
+        }
+
+        #flex-item-6 img {
+            height: 290px;
+        }
+
+        @media all and (max-width:500px) {
+            .flex-row {
+                flex-direction: column;
+                /* width: 100%; */
+                margin: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <fieldset class="fieldset">
+        <legend>
+            <h1>Flexbox Challenge 3</h1>
+        </legend>
+
+        <div class="flex-row">
+            <div class="flex-item" id="flex-item-1">
+                <img src="images/nature.jpg" alt="" class="nature">
+                <h2 class="heading">Nature</h2>
+                <p class="para" id="para1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat deleniti non
+                    explicabo magnam vitae ducimus praesentium maiores dolores eius quas Lorem, ipsum dolor sit amet
+                    consectetur adipisicing elit. Odit, maxime Lorem ipsum dolor sit.</p>
+                <div class="button">
+                    <button class="submit" type="button">Read More</button>
+                </div>
+            </div>
+            <div class="flex-item" id="flex-item-2">
+                <img src="images/football-g2222430cf_1280.jpg" alt="">
+                <h2>Football</h2>
+                <p class="para" id="para2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+                    exercitationem iure nobis quia doloremque similique culpa iusto eos tempore veniam. Neque, itaque
+                    vero voluptatum non error reprehenderit enim? Quis, nobis.</p>
+                <div class="button">
+                    <button type="button" class="submit">Read More</button>
+                </div>
+
+            </div>
+            <div class="flex-item" id="flex-item-3">
+                <img src="images/waterfall.jpg" alt="">
+                <h2>Waterfall</h2>
+                <p class="para" id="para2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+                    exercitationem iure nobis quia doloremque similique culpa iusto eos tempore veniam. Neque, itaque
+                    vero voluptatum non error reprehenderit enim?</p>
+                <div class="button">
+                    <button type="button" class="submit">Read More</button>
+                </div>
+
+            </div>
+        </div>
+        <div class="flex-row">
+            <div class="flex-item" id="flex-item-4">
+                <img src="images/fim.jpg" alt="">
+                <h2>Film Production</h2>
+                <p class="para" id="para2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+                    exercitationem iure nobis quia doloremque similique culpa iusto eos tempore veniam. Neque, itaque
+                    vero voluptatum non error reprehenderit enim Lorem ipsum dolor sit, amet consectetur adipisicing
+                    elit.</p>
+                <div class="button">
+                    <button type="button" class="submit">Read More</button>
+                </div>
+
+            </div>
+            <div class="flex-item" id="flex-item-5">
+                <img src="images/snowfall.jpg" alt="">
+                <h2>Snowfall</h2>
+                <p class="para" id="para2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+                    exercitationem iure nobis quia doloremque similique culpa iusto eos tempore veniam. Neque, itaque
+                    vero voluptatum non error reprehenderit enim Lorem ipsum dolor sit, amet consectetur adipisicing
+                    elit.</p>
+                <div class="button">
+                    <button type="button" class="submit">Read More</button>
+                </div>
+
+
+            </div>
+            <div class="flex-item" id="flex-item-6">
+                <img src="images/cyber-security-gd4ae62fed_1280.png" alt="">
+                <h2>Cyber Security</h2>
+                <p class="para" id="para2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+                    exercitationem iure nobis quia doloremque similique culpa iusto eos tempore veniam. Neque, itaque
+                    vero voluptatum non error reprehenderit enim Lorem ipsum dolor sit, amet consectetur adipisicing
+                    elit.</p>
+                <div class="button">
+                    <button type="button" class="submit">Read More</button>
+                </div>
+
+
+            </div>
+        </div>
+    </fieldset>
+</body>
+
+</html>

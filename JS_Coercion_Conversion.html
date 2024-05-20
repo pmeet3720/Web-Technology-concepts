@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coercion and Conversion</title>
+</head>
+
+<body>
+    <script>
+        // Implicite type conversion
+        let x = 'String' + 5 + 13;
+        // Here, in above case it will convert a number to a string
+        console.log(typeof x, x);
+
+        // Explicite type conversion
+        let a = '10' + 5 + 13;
+        console.log(typeof a, a);
+        // If we want to convert string to a number than we have to use explicite type conversion
+        a = Number('10') + 5 + 13;
+        console.log(typeof a, a);
+
+        let b = 15 + 3 + 'number';
+        // output will be '18number', first it will add two numbers 15 and 3 and then convert 18 to string and concatenate it with number
+        console.log(b);
+
+        let c = 12 / '6';
+        // here '6' is converted to a number 6 then it divides it with 12, but in addition number is converted to a string.
+        console.log(c);
+
+        let d = ([1] > null);
+        // here an array is coverted to a string and then a string is converted to number,  null is converted to 0.
+        console.log(d);
+
+        let y = ('true' == true);
+        console.log(y);
+    </script>
+</body>
+
+</html>

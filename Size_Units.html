@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Size of units</title>
+    <style>
+        .container{
+            /* text-align: center; */
+            font-size: 10px;
+        }
+        .heading{
+            text-align: center;
+        }
+        #first{
+            font-size: 10em;
+            /* this em is font size which represent that it will become 'n' times its parent element if the font size of parent element is 'n' */
+            /* for eg if the font size of first id element is 10em and font size of its parent element is 10px than its size will become 100px that means size of first heading will become 100px */
+            /* if the size of first heading is 4em than it will become 40px as (4em X 10px)=40px  */
+            /* if you want that height of container or box should be exactly equal to viewport or our page than set its height equal to 100vh (vh is for view height)
+            if we set 100vw than it will take whole width of the page vw is for (view width) */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="heading" id="first">This is a first heading</h1>
+        <h1 class="heading" id="second">This is a second heading</h1>
+        <h1 class="heading" id="third">This is a third heading</h1>
+    </div>
+</body>
+</html>

@@ -1,0 +1,15 @@
+{
+  "name": "custom_server2",
+  "version": "1.0.0",
+  "description": "This will be the best version ever build",
+  "main": "Module.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "awesome"
+  ],
+  "author": "Meet",
+  "license": "ISC",
+  "type": "module"
+}

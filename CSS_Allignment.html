@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Allignment</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            text-align: center;
+            font-family: 'Ubuntu', sans-serif;
+
+        }
+
+        .container {
+            background-color: rgb(16 221 221);
+            border: 8px solid rgb(68 48 48);
+            width: 900px;
+            margin: 100px auto;
+        }
+
+        .item {
+            background-color: rgb(40 171 81);
+            border: 3px solid rgb(28 24 24);
+            /* border-radius: 30px; */
+            margin: 12px 3px;
+            padding: 12px 3px;
+
+        }
+
+        #fruits {
+            float: right;
+            width: 48%;
+
+        }
+
+        #computer {
+            /* float: right; */
+            float: left;
+            width: 48%;
+
+        }
+
+        #stationary {
+            /* float: left; */
+            /* float: right; */
+            /* if we write clear left or clear right than it will not allow the other two element to overlap on it which is on left or right */
+            clear: both;
+            width: 100%;
+
+        }
+
+        p,
+        h2 {
+            /* these are the text allignments */
+            text-align: left;
+            text-align: right;
+            text-align: center;
+            text-align: justify;
+        }
+
+        h1 {
+            margin: 50px;
+            /* padding: 50px; */
+        }
+    </style>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=PT+Serif:ital,wght@0,400;1,700&family=Ubuntu:ital@1&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Welcome to my store</h1>
+        <div id="fruits" class="item">
+            <h2>Fruits</h2>
+            <p id="fruitpara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, veniam eaque
+                debitis quisquam est vel sunt in perferendis maxime hic possimus porro qui delectus a aliquam
+                consequuntur ad dolorum commodi nostrum eum soluta eligendi Lorem ipsum dolor sit amet, consectetur
+                adipisicing elit. Dolor, nulla facilis. Obcaecati ipsum laborum aspernatur facere molestias in possimus
+                adipisci amet delectus iure, rerum blanditiis velit sapiente voluptatum officiis iusto. Placeat expedita
+                dicta perferendis?.</p>
+        </div>
+        <div id="computer" class="item">
+            <h2>Computers</h2>
+            <p id="computerpara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, veniam
+                eaque debitis quisquam est vel sunt in perferendis maxime hic possimus porro qui delectus a aliquam
+                consequuntur ad dolorum commodi nostrum eum soluta eligendi Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Asperiores maxime, porro libero a, explicabo incidunt quae quia commodi earum, sunt
+                tenetur. Adipisci voluptatem ullam omnis autem hic quidem amet! Odio minima ipsa est! Quo..</p>
+        </div>
+        <div id="stationary" class="item">
+            <h2>Staionary</h2>
+            <p id="stationarypara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, veniam
+                eaque debitis quisquam est vel sunt in perferendis maxime hic possimus porro qui delectus a aliquam
+                consequuntur ad dolorum commodi nostrum eum soluta eligendi.</p>
+        </div>
+        <div id="glasses" class="item">
+            <h2>Glasses</h2>
+            <p id="glassespara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, veniam
+                eaque debitis quisquam est vel sunt in perferendis maxime hic possimus porro qui delectus a aliquam
+                consequuntur ad dolorum commodi nostrum eum soluta eligendi.</p>
+        </div>
+
+</body>
+
+</html>

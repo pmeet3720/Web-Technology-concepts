@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // In Scoping concept we use 'let' and 'const' keyword not 'var' keyword as var keyword violets our scoping concept 
+
+        // Example with var keyword
+        var x = 10;
+        {
+            var x = 1;
+            console.log(x);
+        }
+        console.log(x);
+
+        // Example with let keyword
+        let x = 10;
+        {
+            let x = 1;
+            console.log(x);
+        }
+        console.log(x);
+
+        // The situation changes with let keyword and var keyword as you see above.
+        // Whenever we declare any variable using var keyword we declare it as a global variable or a window object
+        // In block scope we always use let and const keywords
+
+    </script>
+</body>
+
+</html>

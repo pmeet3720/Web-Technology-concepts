@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigating the DOM</title>
+</head>
+
+<body>
+    <div class="conatiner" id="main">
+        <ul id="nav">
+            <li>Home</li>
+            <li>About Us</li>
+            <li>Services</li>
+            <li>Sign in</li>
+            <li>Contact Us</li>
+        </ul>
+    </div>
+    <script>
+        let main = document.getElementById('main');
+        console.log(main);
+        let navbar = document.getElementById('nav');
+        console.log(navbar);
+        let sel = document.querySelectorAll('#nav>li');
+        console.log("Selector returns ", sel);
+    </script>
+</body>
+
+</html>

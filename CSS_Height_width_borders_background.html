@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Height, width, borders, and backgrounds</title>
+    <style>
+        #firstpara{
+            background-color: blue;
+            height: 100px;
+            width: 400px;
+            /* border: 4px;
+            border-color: black;
+            border-style: solid; */
+            /* we can write all these three border styling in one line */
+            border: 4px solid black;
+            border-radius: 10px;
+        }
+        #secondpara{
+            background-color: rgb(161, 109, 109);
+            height:100px;
+            width: 400px;
+            border-top: 4px solid black;
+            border-bottom: 4px solid rgb(79, 240, 79);
+            border-left: 4px solid rgb(241, 9, 48);
+            border-right: 4px solid rgb(21, 21, 165);
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 20px;
+            border-top-right-radius: 30px;
+            border-bottom-right-radius: 40px;
+        }
+        #thirdpara{
+            background-image: url('https://as1.ftcdn.net/v2/jpg/03/88/58/96/1000_F_388589675_2kqtzWkO6aiTx82XPKHrdKa4UF0s6HKz.jpg');
+            height: 500px;
+            width: 700px;
+            border: 4px solid red;
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+    </style>
+</head>
+<body>
+    <h1>This is heading text</h1>
+    <p id="firstpara">This is a paragraph</p>
+    <h1>This my second heading text</h1>
+    <p id="secondpara">This is my second paragraph</p>
+    <h1>This my third heading text</h1>
+    <p id="thirdpara">This is my third paragraph</p>
+    
+</body>
+</html>

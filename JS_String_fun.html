@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript string functions</title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+
+
+
+    <script>
+        var str = "This is a string";
+        console.log(str);
+        // First occurence of substring
+        var position = str.indexOf('is');
+        // Basically this 'indexOf' function is used to search for substring in a string and returns its index.
+        console.log(position);
+
+        // Last occurence of substring
+        position = str.lastIndexOf('is');
+        console.log(position);
+
+        // substring from a string
+        var substr = str.slice(0, 7);
+        substr = str.substring(1, 5);
+        console.log(substr);
+        // This slice and sustring function are somewhat similar the only difference between them is slice can take negative values also and substring function can only take positive values.
+        var substr1 = str.substr(1, 5);
+        // This substr function tells us about two parameters- first is from where we are going to start and second parameter is how many characters we are going to take in a substring.
+        console.log(substr1);
+
+        // functions for replacing any substring from string
+        var replaced = str.replace('string', 'Meet');
+        console.log(str);
+        console.log(replaced);
+
+        console.log(str.toUpperCase());
+        console.log(str.toLowerCase());
+
+        var newstring = str.concat(' New string ');
+        console.log(newstring);
+
+        var strWithWhitespaces = "     This is     whitespace    string   ";
+        console.log(strWithWhitespaces);
+        console.log(strWithWhitespaces.trim());
+        // This trim function trims from each ends, from front and from back.
+
+        let string = "Hello! " + 1 + 2;
+        // if you want to use double quotes inside a string then use backslash inside the string
+        let myStr = "I am a \"double quoted\" string inside \"double quotes\".";
+        console.log(myStr);
+
+        // String interpolation
+        // symbol - ${.....}
+        const randomPercent = () => {
+            return `${Math.floor(Math.random() * 100)}%`;
+        }
+        let myStr2 = `This is string interpolated with an variable ${randomPercent()}`;
+        console.log(myStr2);
+        
+
+    </script>
+</body>
+
+</html>

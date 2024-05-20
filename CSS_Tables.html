@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS tables</title>
+    <style>
+        .container {
+            border: 2px solid #0e0808d1;
+            width: 400px;            
+            margin: auto;
+            padding: 2px;
+            border-collapse: collapse;
+            border-spacing: 10px;
+            background-color: #a8c8ef;
+            /* width: 500px; */
+        }
+
+        table,
+        td,
+        th {
+            border: 2px solid #0e0808d1;
+            /* border-spacing: none; */
+            padding: 10px;
+            border-radius: 3px;
+        }
+        .container1{
+            background-color: yellowgreen;
+            border-radius: 3px;
+        }
+        .container2{
+            background-color: yellowgreen;
+            border-radius: 2px;
+        }
+        td{
+            border-radius: 3px;
+        }
+
+        .heading {
+            margin: 20px;
+            text-align: center;
+        }
+
+        .maincontainer {
+            /* background-color: beige; */
+            background-image: url("img_tree.gif"), url("paper.gif");
+            background-repeat: no-repeat, repeat;
+            background-color: #6eb7b740;
+            border: 2px solid #63bbbb40;
+            border-radius: 4px;
+            width: 500px;
+            margin: auto;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="maincontainer">
+        <h1 class="heading">CSS Table</h1>
+
+        <table class="container">
+            <tr class="container1">
+                <th>Sr.No</th>
+                <th>Company</th>
+                <th>Salary</th>
+            </tr>
+            <tr class="container2">
+                <td>1.</td>
+                <td>Google</td>
+                <td>20 lakh INR</td>
+            </tr>
+            <tr class="container2">
+                <td>2.</td>
+                <td>Microsoft</td>
+                <td>25 Lakh INR</td>
+            </tr>
+            <tr class="container2">
+                <td>3.</td>
+                <td>Amazon</td>
+                <td>30 Lakh INR</td>
+            </tr>
+            <tr class="container2">
+                <td>4.</td>
+                <td>Netflix</td>
+                <td>15 Lakh INR</td>
+            </tr>
+            <tr class="container2">
+                <td>5.</td>
+                <td>Apple</td>
+                <td>12 Lakh INR</td>
+            </tr>
+            <tr class="container2">
+                <td>6.</td>
+                <td>Facebook</td>
+                <td>18 Lakh INR</td>
+            </tr>
+        </table>
+    </div>
+    <!-- some css properties for making table beautiful -->
+    <!-- 1.border- collapse -->
+    <!-- 2.bober-spacing -->
+    <!-- 3.vertical-align -->
+    <!-- 4.caption-side -->
+    <!-- 5.empty-cells -->
+    <!-- 6.table-layout -->
+    <!-- if you wanna make boders around a table with css then use following code -->
+    <!-- table,th,td{
+        border: 1px solid black;
+    } -->
+    <!-- first border collapse has two properties:
+    1.separate
+    2.collapse -->
+    <!-- second is border spacing property -->
+    <!-- it creates spacing between borders -->
+    <!-- if we write boreder spacing: 10px 20px -->
+    <!-- 10px is for coloumn border spacing and -->
+    <!-- 20px is for row border spacing -->
+</body>
+
+</html>

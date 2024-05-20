@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display Property</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        .imgcontainer {
+            width: 305px;
+            height: 200px;
+            margin:  10px auto;
+            border-radius: 8px;
+            display: block;
+            /* vertical-align: middle; */
+        }
+
+        .top {
+            margin: auto;
+            width: 100%;
+            text-align: center;
+            border: 3px solid rgb(46, 43, 43);
+            background-color: rgb(117, 155, 236);
+            border-radius: 10px;
+        }
+
+        .logoheading {
+            font-family: 'Asap', sans-serif;
+        }
+
+        .container {
+            border: 2px solid grey;
+            background-color: #ccc;
+            margin: 10px 21px;
+            padding: 10px;
+            width: 300px;
+            display:  inline-block;
+        }
+        .box{
+            border: 3px solid rgb(46, 43, 43);
+            background-color: rgb(230, 159, 159);
+            width: 100%;
+            margin: 10px 0px;
+            padding: 10px 10px;
+            border-radius: 10px;
+        }
+        /* h3,p{
+            display: inline;
+        } */
+    </style>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=PT+Serif:ital,wght@0,400;1,700&family=Ubuntu+Condensed&family=Ubuntu:ital@1&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="top">
+        <img src="https://cdn3.f-cdn.com//files/download/111487023/f9ca31.jpg" alt="" class="imgcontainer">
+        <h2 class="logoheading">This is a eagle image logo</h2>
+    </header>
+    <!-- header is a block element it takes whole width along its space -->
+    <!-- we can make it inline by using display properties -->
+    <!-- display inline means it will take size of element only not whole space
+    and width of inline elemnts will not change until you don't make them block element -->
+    <!-- box-sizing: border box property is use to let width not to change including margin, padding 
+    they will not change if you use box sizing property they will keep them fix.
+otherwise the margin and padding will change the width of box you don't use this property -->
+<!-- display is used to convert inline to block or block to inline -->
+<!-- li tag , p tag, h1,h2,h3,h4,h5,h6,ul,div tags all are block elements and they can be converted into inline elements with the help of display property -->
+<!-- span tag, anchor tag, etc are inline elements and can be converted into block element -->
+    <div class="box">
+        <div class="container">
+            <h3>Heading</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt officiis dolores facere, quo explicabo
+                aspernatur nesciunt quibusdam inventore eaque placeat debitis ea facilis dolore, vero error laboriosam
+                minus atque, enim animi. Soluta magnam dicta at exercitationem iure laboriosam, magni est!</p>
+        </div>
+        <div class="container">
+            <h3>Heading</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt officiis dolores facere, quo explicabo
+                aspernatur nesciunt quibusdam inventore eaque placeat debitis ea facilis dolore, vero error laboriosam
+                minus atque, enim animi. Soluta magnam dicta at exercitationem iure laboriosam, magni est!</p>
+        </div>
+        <div class="container">
+            <h3>Heading</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt officiis dolores facere, quo explicabo
+                aspernatur nesciunt quibusdam inventore eaque placeat debitis ea facilis dolore, vero error laboriosam
+                minus atque, enim animi. Soluta magnam dicta at exercitationem iure laboriosam, magni est!</p>
+        </div>
+    </div>
+</body>
+
+</html>

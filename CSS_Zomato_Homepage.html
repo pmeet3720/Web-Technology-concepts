@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zomato Homepage</title>
+    <style>
+        /* body{
+            position: relative;
+        } */
+        div.login::before {
+            content: " ";
+            background: url('https://st2.depositphotos.com/4516737/11633/i/950/depositphotos_116332626-stock-photo-frame-from-different-burgers-with.jpg') no-repeat center center/cover;
+            position: absolute;
+            /* z-index: 1; */
+            width: 100%;
+            height: 100%;
+            opacity: 0.9;
+            left: 0;
+            top: 0;
+        }
+
+        /* above we have used pseudo selectors for inserting image at background of container */
+        .nav {
+            display: flex;
+            flex-direction: row;
+            /* align-items: flex-end; */
+            justify-content: flex-end;
+            /* justify-content: right; */
+            /* right: 20px; */
+            /* margin: 20px; */
+        }
+
+        li {
+            list-style: none;
+            margin: 5px 0px;
+            opacity: 2;
+        }
+
+        a {
+            position: absolute;
+            top: 32px;
+            right: 226px;
+            text-decoration: none;
+            color: #FFFFFF;
+            font-size: 19px;
+            opacity: 2;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        a:hover {
+            color: black;
+            font-size: 20px;
+        }
+
+        .button {
+            position: absolute;
+            top: 25px;
+            right: 40px;
+            background-color: transparent;
+            color: white;
+            padding: 9px 13px;
+            margin: 0px 20px;
+            border: 1px solid white;
+            border-radius: 5px;
+            font-size: 16px;
+            font-family: 'Poppins', sans-serif;
+            opacity: 2;
+        }
+
+        button:hover {
+            background-color: white;
+            color: black;
+            cursor: pointer;
+        }
+
+        .image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            /* z-index: 1; */
+            position: absolute;
+            top: 76px;
+            left: 530px;
+            width: 300px;
+            height: 142px;
+            border-radius: 50%;
+            background: #FFFFFF 0% 0% no-repeat padding-box;
+            border: 1px solid #FFFFFF;
+            opacity: 1;
+            text-align: center;
+            /* margin: auto; */
+        }
+
+        .edureka {
+            /* position: absolute; */
+            /* top: 105px; */
+            /* left: 649px; */
+            /* width: 68px; */
+            /* height: 99px; */
+            /* UI Properties */
+            text-align: center;
+            /* font: normal normal 600 70px/106px Poppins; */
+
+            font-size: 70px;
+            letter-spacing: 0px;
+            color: #EB2929;
+            opacity: 1;
+        }
+
+        /* img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 1366px;
+            height: 480px;
+            z-index: -1;
+            opacity: 0.61;
+        } */
+
+        .container {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 1366px;
+            height: 480px;
+            /* UI Properties */
+            background: transparent linear-gradient(180deg, #83181800 0%, #440303 100%) 0% 0% no-repeat padding-box;
+            mix-blend-mode: multiply;
+            opacity: 1;
+            /* z-index: 1; */
+        }
+
+        .title {
+            color: #FFFFFF;
+            /* opacity: 1; */
+            position: absolute;
+            top: 39.5%;
+            left: 24%;
+            font: normal normal 600 36px/55px Poppins;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .location {
+            position: absolute;
+            top: 339px;
+            left: 328px;
+            width: 245px;
+            height: 60px;
+            background: #FFFFFF 0% 0% no-repeat padding-box;
+            opacity: 1;
+            border: none;
+            border-radius: 8px;
+        }
+
+        .search {
+            position: absolute;
+            top: 339px;
+            left: 592px;
+            width: 477px;
+            height: 60px;
+            /* UI Properties */
+            background: #FFFFFF 0% 0% no-repeat padding-box;
+            opacity: 1;
+            border: none;
+            border-radius: 8px;
+        }
+
+        .material-symbols-outlined {
+            font-variation-settings:
+                'FILL' 0,
+                'wght' 400,
+                'GRAD' 0,
+                'opsz' 48
+        }
+
+        .section {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            top: 506px;
+            left: 115px;
+            width: 100%;
+        }
+
+        .quick {
+            font-family: 'Poppins', sans-serif;
+            font-size: 20px;
+            margin: opx;
+            font: normal normal bold 30px/46px Poppins;
+            letter-spacing: 0px;
+            color: #192F60;
+            opacity: 1;
+        }
+
+        .meal {
+            position: absolute;
+            top: 78px;
+            left: 3px;
+            font-size: 23px;
+            margin: 0px 0px;
+            font-family: 'Poppins', sans-serif;
+            font: normal normal normal 18px/27px Poppins;
+            letter-spacing: 0px;
+            color: #8C96AB;
+            opacity: 1;
+            /* display: inline-block; */
+            /* width: 100%; */
+        }
+
+        .section2 {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
+
+        .first-row {
+            display: flex;
+            position: absolute;
+            top: 668px;
+            left: 100px;
+        }
+
+        .second-row {
+            display: flex;
+            position: absolute;
+            top: 872px;
+            left: 100px;
+        }
+
+        .boxes {
+            /* position: absolute; */
+            /* position: relative; */
+            top: 636px;
+            left: 113px;
+            border: 2px solid #FFFFFF;
+            width: 360px;
+            height: 160px;
+            margin: 0px 10px;
+            /* UI Properties */
+            background: #FFFFFF 0% 0% no-repeat padding-box;
+            box-shadow: 0px 3px 6px #00000029;
+            opacity: 1;
+        }
+
+        .box-image {
+            width: 183px;
+            height: 160px;
+            /* UI Properties */
+            opacity: 1;
+        }
+
+        .box-heading {
+            /* position: absolute; */
+            top: 12px;
+            left: 302px;
+            width: 88px;
+            height: 25px;
+            /* UI Properties */
+            text-align: left;
+            display: flex;
+            font: normal normal 600 18px/27px Poppins;
+            letter-spacing: 0px;
+            color: #192F60;
+            opacity: 1;
+        }
+
+        #heading-1 {
+            position: absolute;
+            top: -4px;
+            left: 219px;
+        }
+
+        #heading-2 {
+            position: absolute;
+            top: -4px;
+            left: 603px;
+        }
+
+        #heading-3 {
+            position: absolute;
+            top: -4px;
+            left: 987px;
+        }
+
+        #heading-4 {
+            position: absolute;
+            top: 3px;
+            left: 219px;
+        }
+
+        #heading-5 {
+            position: absolute;
+            top: 3px;
+            left: 603px;
+        }
+
+        #heading-6 {
+            position: absolute;
+            top: 3px;
+            left: 987px;
+        }
+
+        .box-para {
+            top: 690px;
+            left: 302px;
+            width: 138px;
+            height: 62px;
+            text-align: left;
+            font: normal normal normal 14px/21px Poppins;
+            letter-spacing: 0px;
+            color: #8C96AB;
+            opacity: 1;
+        }
+
+        #para-1 {
+            position: absolute;
+            top: 35px;
+            left: 219px;
+        }
+
+        #para-2 {
+            position: absolute;
+            top: 35px;
+            left: 603px;
+        }
+
+        #para-3 {
+            position: absolute;
+            top: 35px;
+            left: 987px;
+        }
+
+        #para-4 {
+            position: absolute;
+            top: 42px;
+            left: 219px;
+        }
+
+        #para-5 {
+            position: absolute;
+            top: 42px;
+            left: 603px;
+        }
+
+        #para-6 {
+            position: absolute;
+            top: 42px;
+            left: 987px;
+        }
+    </style>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="login">
+            <ul class="nav">
+                <li><a href="#">Login</a></li>
+                <!-- <input type="submit" value="Create Account" class="button"> -->
+                <button class="button">Create Account</button>
+            </ul>
+        </div>
+        <div class="image">
+            <h5 class="edureka">Zomato</h5>
+        </div>
+        <div class="title">
+            <h4 class="heading">Find the best restaurants, cafés, and bars</h4>
+        </div>
+        <!-- <img src="/images/edureka logo.png" alt="" class="logo"> -->
+        <!-- <img src="/images/zomato background image.jpg" alt=""> -->
+        <div class="locationtext">
+            <input type="text" placeholder="Please type your location" class="location">
+            <input type="text" placeholder="Search for restaurants" class="search"
+                class="material-symbols-outlined search">
+        </div>
+    </div>
+    <div class="section">
+        <div class="quick">
+            <h3>Quick Searches</h3>
+        </div>
+        <div class="meal">
+            <p>Discover restaurants by type of meal</p>
+        </div>
+    </div>
+    <div class="section2">
+        <div class="first-row">
+            <div class="boxes" id="box-1">
+                <img src="images/pic1.png" alt="" class="box-image">
+                <h3 class="box-heading" id="heading-1">Breakfast</h3>
+                <p class="box-para" id="para-1">Start your day with exclusive breakfast options</p>
+            </div>
+            <div class="boxes" id="box-2">
+                <img src="images/pic2.png" alt="" class="box-image">
+                <h3 class="box-heading" id="heading-2">Lunch</h3>
+                <p class="box-para" id="para-2">Start your day with exclusive breakfast options</p>
+            </div>
+            <div class="boxes" id="box-3">
+                <img src="images/pic3.png" alt="" class="box-image">
+                <h3 class="box-heading" id="heading-3">Snacks</h3>
+                <p class="box-para" id="para-3">Start your day with exclusive breakfast options</p>
+            </div>
+        </div>
+        <div class="second-row">
+            <div class="boxes" id="box-4">
+                <img src="images/pic4.png" alt="" class="box-image">
+                <h3 class="box-heading" id="heading-4">Dinner</h3>
+                <p class="box-para" id="para-4">Start your day with exclusive breakfast options</p>
+            </div>
+            <div class="boxes" id="box-5">
+                <img src="images/pic5.png" alt="" class="box-image">
+                <h3 class="box-heading" id="heading-5">Drinks</h3>
+                <p class="box-para" id="para-5">Start your day with exclusive breakfast options</p>
+            </div>
+            <div class="boxes" id="box-6">
+                <img src="images/pic6.png" alt="" class="box-image">
+                <h3 class="box-heading" id="heading-6">Nightlife</h3>
+                <p class="box-para" id="para-6">Start your day with exclusive breakfast options</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

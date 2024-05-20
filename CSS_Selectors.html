@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        /* id selector */
+        #firstpara {
+            color: darkblue;
+            /* background-color: darkgreen; */
+        }
+        /* Class selector */
+        .bgblack{
+            color: red;
+            /* background-color: black; */
+        }
+        /* again id selector */
+        #secondpara{
+            color: green;
+            /* background-color: black; */
+        }
+        /* If id and class both are inlcuded in same element and if we write first id and its property than class and its property id will be given more preference */
+        /* if we write two same ids with different properties than id which is written after first id will be given more preference */
+        /* #secondpara {
+            color: blue;
+            background-color: brown;
+        } */
+        /* Group element selector */
+        footer, span{
+            background-color: brown;
+        }
+        /* above written is group selectors */
+        /* element selector */
+        p{
+            border: 2px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CSS Selectors</h1>
+    <h3>
+        <p id="firstpara" class="bgblack">This is a simple paragraph to demonstrate css</p>
+    </h3>
+    <!-- we have used same class for firstpara id but ids are different -->
+    <!-- we will use id when if we wanted to change the only one element property and if you want to change other element property than use another id -->
+    <h3><span>This is span</span></h3>
+    <h3>
+        <p id="secondpara" class=" bgblack">This is a another simple paragraph to demonstrate css</p>
+    </h3>
+    <h3><footer>This is footer</footer></h3>
+</body>
+
+</html>
